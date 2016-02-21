@@ -16,6 +16,30 @@ var FluxCartActions= {
         })
     },
 
+    addToCart: function(sku, update) {
+        AppDispatcher.handleAction({
+            actionType: FluxCartConstants.CART_ADD,
+            sku: sku,
+            update: update
+        })
+    },
+
+    // Remove item from cart
+    removeFromCart: function(sku) {
+        AppDispatcher.handleAction({
+            actionType: FluxCartConstants.CART_REMOVE,
+            sku: sku
+        })
+    },
+
+    // Update cart visibility status
+    updateCartVisible: function(cartVisible) {
+        AppDispatcher.handleAction({
+            actionType: FluxCartConstants.CART_VISIBLE,
+            cartVisible: cartVisible
+        })
+    },
+
 };
 
 module.exports = FluxCartActions;
