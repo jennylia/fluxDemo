@@ -19,7 +19,7 @@ function removeItem(sku){
 }
 
 var CartStore = _.extend({}, EventEmitter.prototype, {
-    getCartItem: function(){
+    getCartItems: function(){
         return _products;
     },
 

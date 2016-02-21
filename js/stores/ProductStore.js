@@ -14,7 +14,7 @@ function loadProductData(data){
 
 //method to set the currently selected product variation
 function setSelected(index){
-    _selected = product.variants[index];
+    _selected = _product.variants[index];
 }
 
 var ProductStore = _.extend({}, EventEmitter.prototype, {

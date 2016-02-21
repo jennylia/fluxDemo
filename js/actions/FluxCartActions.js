@@ -10,7 +10,7 @@ var FluxCartActions= {
     },
 
     selectProduct: function(index){
-        App.Dispatcher.handleAction({
+        AppDispatcher.handleAction({
             actionType: FluxCartConstants.SELECT_PRODUCT, //TODO: should I create a constant for this
             data: index
         })
